@@ -18,6 +18,17 @@
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
   }
+  .navbar-collapse{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    z-index: 1000;
+  }
+
+  .navbar{
+    background-color: white !important;
+  }
 </style>
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
@@ -32,7 +43,7 @@
       </div>
       <div class="navbar-nav ms-auto">
         <form class="d-flex" role="search" action="/listings" method="GET">
-        <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations" name="q" placeholder="Search destinations" 
+        <input class="form-control me-2 search-inp" type="search" placeholder="Search destinations" name="q"  
     value="<%= typeof query !== 'undefined' ? query : '' %>"/>
         <button class="btn search-btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
     </form>

@@ -83,6 +83,9 @@ body{
     opacity: 0.2;
     background-color: white;
 }
+.card{
+    overflow: hidden;
+}
 
 .add-btn{
     background-color: #fe424d !important;
@@ -96,7 +99,10 @@ body{
 
 /* Show page */
 .show-image {
-    height: 30vh;   
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;   
 } 
 
 .btns {
